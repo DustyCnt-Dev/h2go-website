@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>{{CompanyName}} | Water Leaks & Drain Repair – Residential & Commercial Services</title>
+  <meta name="description" content="24/7 emergency drain repair, leak detection & pipe relining for homes and businesses across {{ServiceArea}}. Fully licensed & insured. Call now for a free quote!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://{{domain}}/" />
+  <meta property="og:title" content="{{CompanyName}} | Water Leaks & Drain Repair">
+  <meta property="og:description" content="Fast, affordable drain repair & leak detection. 24/7 emergency service.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://{{domain}}/">
+  <meta property="og:image" content="https://{{domain}}/og-image.jpg">
+  <meta name="format-detection" content="telephone=yes">
+  
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <nav>
+    <div class="logo">H2go Water Leaks</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Fast Water Leak & Drain Repair</h1>
+  <p>Residential • Commercial • 24/7 Emergency</p>
+  <a href="tel:{{phone}}" class="btn">Call Our Team</a>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="service-card">
+      <h3>Leak Detection</h3>
+      <p>Non-invasive acoustic & thermal imaging to locate hidden leaks fast.</p>
+    </div>
+    <div class="service-card">
+      <h3>Drain Repairs</h3>
+      <p>High-pressure jetting and electro-mechanical cleaning for sinks, toilets & main lines.</p>
+    </div>
+    <div class="service-card">
+      <h3>Emergency Leak response</h3>
+      <p>Trenchless CIPP lining restores damaged pipes without excavation.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>Why Choose us?</h2>
+  <ul>
+    <li>Licensed & Insured Master Plumbers</li>
+    <li>Up-front pricing – no hidden fees</li>
+    <li>60-minute response in {{ServiceArea}}</li>
+    <li>Lifetime warranty on relining work</li>
+  </ul>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="testimonials">
+  <h2>Customer Reviews</h2>
+  <div class="testimonial">
+    “They found the slab leak in 30 minutes and repaired it the same day. Saved us thousands in water damage.” – Sarah L., Homeowner
+  </div>
+  <div class="testimonial">
+    “NPB Restaurant relies on them for monthly grease-trap maintenance. Always on time and professional.” – Mark D., Facilities Manager
+  </div>
+</section>
+
+<!-- Contact / Quote -->
+<section id="contact">
+  <h2>Get a Free Quote</h2>
+  <form action="https://formspree.io/f/{{formID}}" method="POST">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email">
+    <select name="service" required>
+      <option value="">Choose service…</option>
+      <option>Leak Detection</option>
+      <option>Drain Unblock</option>
+      <option>Pipe Relining</option>
+      <option>Other</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="Describe the issue…" required></textarea>
+    <button type="submit" class="btn">Send Quote Request</button>
+  </form>
+</section>
+
+<!-- Sticky CTA -->
+<div class="cta-bar">
+  <span>Emergency? </span>
+  <a href="tel:{{phone}}" class="btn" style="margin-left:.5rem">Call us Today</a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 H2go Leaaks & Drain repair services. All rights reserved.</p>
+    <p>Licensed & Insured | Serving | <a href="https://{{domain}}/privacy-policy">Privacy Policy</a></p>  
+</footer>
+
+<!-- JSON-LD LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "{{CompanyName}}",
+  "image": "https://{{domain}}/logo.png",
+  "url": "https://{{domain}}",
+  "telephone": "{{phone}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{street}}",
+    "addressLocality": "{{city}}",
+    "addressRegion": "{{state}}",
+    "postalCode": "{{zip}}"
+  },
+  "areaServed": "{{ServiceArea}}",
+  "serviceType": ["Drain Cleaning", "Leak Detection", "Pipe Relining", "Emergency Plumbing"]
+}
+</script>
+
+<!-- Simple JS to hide sticky CTA on scroll-up -->
+<script>
+  const cta = document.querySelector('.cta-bar');
+  let last = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    y > last ? cta.style.transform = 'translateY(100%)' : cta.style.transform = 'translateY(0)';
+    last = y;
+  });
+</script>
+
+</body>
+</html>

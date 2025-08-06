@@ -1,0 +1,39 @@
+/* CSS */
+    
+:root {
+      --brand: #0077cc;
+      --brand-dark: #005599;
+      --light: #f7f9fb;
+      --dark: #222;
+      --success: #28a745;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--dark);background:#fff}
+    img{max-width:100%;height:auto;display:block}
+    header{background:var(--brand);color:#fff;padding:1rem 1.25rem;position:sticky;top:0;z-index:999}
+    nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .logo{font-weight:700;font-size:1.25rem}
+    .nav-links{list-style:none;display:flex;gap:1rem}
+    .nav-links a{color:#fff;text-decoration:none;font-weight:500}
+    .hero{background:url('hero-drain.jpg') center/cover no-repeat;color:#fff;text-align:center;padding:5rem 1rem}
+    .hero h1{font-size:2.25rem;margin-bottom:.5rem}
+    .hero p{font-size:1.125rem;margin-bottom:1.5rem}
+    .btn{background:var(--success);color:#fff;padding:.75rem 1.5rem;border:none;border-radius:4px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block}
+    .btn:hover{opacity:.9}
+    section{padding:3rem 1rem;max-width:1100px;margin:auto}
+    h2{margin-bottom:1rem;font-size:1.75rem}
+    .grid{display:grid;gap:2rem}
+    .services .grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .service-card{background:var(--light);border-radius:8px;padding:1.5rem;text-align:center}
+    .service-card h3{margin:.5rem 0}
+    .testimonials{background:var(--light)}
+    .testimonial{font-style:italic;margin-bottom:1rem}
+    .cta-bar{background:var(--brand-dark);color:#fff;text-align:center;padding:1rem;position:fixed;bottom:0;width:100%;z-index:998}
+    form{max-width:600px;margin:auto;display:grid;gap:1rem}
+    input,textarea,select{padding:.75rem;border:1px solid #ccc;border-radius:4px;font-size:1rem}
+    footer{background:#111;color:#fff;padding:2rem 1rem;text-align:center;font-size:.875rem}
+    @media(max-width:600px){
+      .nav-links{flex-direction:column;gap:.5rem}
+      .hero{padding:3rem 1rem}
+      .hero h1{font-size:1.75rem}
+    }
